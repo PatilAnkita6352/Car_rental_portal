@@ -1,0 +1,43 @@
+  body {
+  margin: 0;
+  font-size: 28px;
+  
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  height: 75px; 
+  font-size: 10%;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar a:hover {
+  background-color:#C3F8A8;
+  color: black;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  opacity: 95%;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 70px;
+}

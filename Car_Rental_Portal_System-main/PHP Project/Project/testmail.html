@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>HTML email</title>
+<meta name="viewport" content="width=device-width, initial-scale=1 PHP http " >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css@master/dist/aqua.min.css" rel="stylesheet" />
+
+</head><!-- https://blog.directauto.com/wp-content/uploads/2014/11/01-16_blog_660x440_rentcar.jpg -->
+<body ><br/><br/>
+<center><fieldset style="border:2px solid; height: 740px; width: 700px;"><br>
+<img style="height: 450px; width:600px;" src="images/booked_email.jpg">
+<h2><i class="fa fa-thumbs-up"></i>Congratulations !<br>Car Booked</h2>
+<h3>Name:<?php echo $_SESSION['user_name']?></h3>
+<h3>Contact:<?php echo $_SESSION['user_contact'];?></h3>
+<h3>Car Type:</h3>
+<h3>Car Registration No.:</h3>
+
+</fieldset>
+</center><br><br>
+</body>
+</html>
+<!-- <?php
+$to = "somebody@example.com, somebodyelse@example.com";
+$subject = "HTML email";
+
+$message = "
+<html>
+<head>
+<title>HTML email</title>
+</head>
+<body background-img('')>
+<p>This email contains HTML Tags!</p>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+</tr>
+<tr>
+<td>John</td>
+<td>Doe</td>
+</tr>
+</table>
+</body>
+</html>
+";
+
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+$headers .= 'From: <webmaster@example.com>' . "\r\n";
+$headers .= 'Cc: myboss@example.com' . "\r\n";
+
+mail($to,$subject,$message,$headers);
+?> -->
